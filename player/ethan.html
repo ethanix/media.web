@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <style>
+        .tablex {border-collapse: collapse;}
+        .tablex tr {}
+        .tablex tr td {text-align:center; line-height:20px; width:300px;}
+        </style>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+    </head>
+	<body class="is-preload">
+	<div id="wrapper">
+	<div id="main">
+	<div class="inner">
+	<header id="header">
+        <span>
+            <a class="icon solid fa-paper-plane" href="https://ethanix.github.io/">&nbsp;&nbsp;HOMEPAGE</a>
+            &nbsp;&nbsp;&nbsp;
+            <a class="icon solid fa-compact-disc" href="../index.html">&nbsp;&nbsp;MEDIA</a>
+        </span>
+	</header><br>
+
+    <body>
+    <table class="tablex" border="1" cellspacing="0" cellpadding="20" align="center">
+    <tr>
+    <td align="center">SONG</td>
+    <td align="center">NUMBER</td>
+    </tr>
+
+    <tr>
+    <td align="center"><b><p id="title"></p></b></td>
+    <td align="center">
+    <div class="show_song_no">
+    <font><i id="present"/></font> / <b id="total"/>
+    </div>
+    </td></tr>
+
+    <tr><td colspan="3" align="center">
+    <button onclick="previous_song()" id="pre"><b>↼↼</b></button>
+    <button onclick="justplay()" id="play"><font color="blue"><b>▷</b></font></button>
+    <button onclick="next_song()" id="next"><b>⇁⇁</b></button>
+    </td></tr>
+
+    <tr><td colspan="3" align="center">
+    <button id="auto" onclick="autoplay_switch()"><b>⇉</b></button>
+    <button id="random" onclick="randomplay_switch()"><b>⇄</b></button>
+    </td></tr>
+
+    <tr><td colspan="3" align="center">
+    <div class="duration">
+    <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+    </div>
+    </td></tr>
+    </table>
+    </body>
+</html>
+<script src="../assets/js/list/ethan.js"></script>
+<script src="../assets/js/script.js"></script>
